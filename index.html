@@ -3,55 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navigation</title>
+    <title>CSS Display Property</title>
     <style>
-      .navbar {
-        background-color: black;
-        border-radius: 30px;
+      header {
+        margin: auto;
+        border: 2px solid red;
+        width: 30%;
       }
-      .navbar ul {
-        overflow: auto;
+      img {
+        border-radius: 100%;
+        margin: auto;
+        display: block;
+        height: 200px;
       }
-      .navbar li {
-        float: left;
-        list-style: none;
-        margin: 13px 20px;
-      }
-      .navbar li a {
-        padding: 3px 3px;
-        text-decoration: none;
-        color: white;
-      }
-      .navbar input {
-        border: 2px solid black;
-        border-radius: 7px;
-        padding: 3px 17px;
-      }
-      .search {
-        color: white;
-        float: right;
-        padding: 12px 75px;
+      h3 {
+        text-align: center;
+        display: block;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0px;
       }
     </style>
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">Contact Us</a></li>
-          <div class="search">
-            <input
-              type="text"
-              name="search"
-              id="search"
-              placeholder="search in the website"
-            />
-          </div>
-        </ul>
-      </nav>
+    <header class="top">
+      <img src="https://avatars.githubusercontent.com/u/50456734?v=4" />
+      <h3>Welcome to Soumya's Blog</h3>
     </header>
   </body>
 </html>
