@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fitness Hub</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="CSS/style.css" />
     <style>
       /* CSS Reset */
@@ -13,13 +17,26 @@
         padding: 0px;
         background: url("img/gym-bg.jpg");
         background-size: cover;
+        font-family: "Ubuntu", sans-serif;
       }
       .left {
         position: absolute;
-        left: 34px;
+        left: 60px;
         top: 20px;
         display: inline-block;
         border: 2px solid red;
+      }
+      .left img {
+        display: block;
+        margin: auto auto;
+        width: 90px;
+        filter: invert(100%);
+      }
+      .left div {
+        line-height: 20px;
+        font-size: 17px;
+        letter-spacing: 1px;
+        text-align: center;
       }
       .mid {
         display: block;
@@ -42,6 +59,7 @@
         font-size: 20px;
       }
       .navbar li a {
+        color: white;
         text-decoration: none;
         padding: 34px 23px;
       }
@@ -50,25 +68,45 @@
         text-decoration: underline;
         color: grey;
       }
+      .btn {
+        font-family: 'Ubuntu', sans-serif;
+        margin: 0px 9px;
+        padding: 4px 14px;
+        background-color: black;
+        color: white;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background-color: rgb(88, 87, 87);
+      }
     </style>
   </head>
   <body>
     <header class="header">
       <!-- Left box for logo -->
-      <div class="left">I am left</div>
+      <div class="left">
+        <img src="img/gym-logo.png" alt="" />
+        <div>Fitness Hub</div>
+      </div>
 
       <!-- Mid box for navbar -->
       <div class="mid">
         <ul class="navbar">
-          <li><a href="https://www.google.com" class="active"></a>Home</li>
-          <li><a href="https://www.google.com"></a>About Us</li>
-          <li><a href="https://www.google.com"></a>Fitness Calculator</li>
-          <li><a href="https://www.google.com"></a>Contact Us</li>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Fitness Calculator</a></li>
+          <li><a href="#">Contact Us</a></li>
         </ul>
       </div>
 
       <!-- Right box for buttons -->
-      <div class="right">I am right</div>
+      <div class="right">
+        <button class="btn">Call Us</button>
+        <button class="btn">Email Us</button>
+      </div>
     </header>
   </body>
 </html>
