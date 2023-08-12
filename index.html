@@ -3,35 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Keyframes & Animations</title>
+    <title>Document</title>
     <style>
-      .container {
-        background-color: yellowgreen;
+      body {
+        background-color: black;
       }
-      .box {
-        background-color: green;
-        width: 250px;
-        height: 250px;
-        position: relative;
-        animation-name: soumya;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-        animation-fill-mode: forwards;
-      }
-
-      @keyframes soumya {
-        from {
-          width: 200px;
-        }
-        to {
-          width: 1400px;
-        }
+      #blurimg {
+        filter: drop-shadow(5px 5px 5px black inset);
+        width: 500px;
+        height: 500px;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="box">This is a box</div>
+      <img src="steve_jobs.png" id="blurimg" />
     </div>
   </body>
 </html>
