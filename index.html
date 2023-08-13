@@ -3,21 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CSS Grid</title>
     <style>
-      body {
-        background-color: black;
+      .container {
+        display: grid;
+        grid-template-columns: 300px auto 100px;
       }
-      #blurimg {
-        filter: drop-shadow(5px 5px 5px black inset);
-        width: 500px;
-        height: 500px;
+      .item {
+        /* height: 100px;
+        width: 100px; */
+        background-color: red;
+        border: 2px solid black;
+        margin: 3px;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <img src="steve_jobs.png" id="blurimg" />
+      <div class="item">This is Item-1</div>
+      <div class="item">This is Item-2</div>
+      <div class="item">This is Item-3</div>
+      <div class="item">This is Item-4</div>
+      <div class="item">This is Item-5</div>
+      <div class="item">This is Item-6</div>
+      <div class="item">This is Item-7</div>
+      <div class="item">This is Item-8</div>
+      <div class="item">This is Item-9</div>
     </div>
   </body>
 </html>
