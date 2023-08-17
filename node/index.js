@@ -4,7 +4,9 @@ const { url } = require("inspector");
 
 const hostname = "127.0.0.1";
 const port = 3000;
-const home = fs.readFileSync("index.html");
+const home = fs.readFileSync(
+  "/home/soumya/VS Code Projects/web_dev_harry/node/index.html"
+);
 const about = fs.readFileSync(
   "/home/soumya/VS Code Projects/web_dev_harry/node/about.html"
 );
