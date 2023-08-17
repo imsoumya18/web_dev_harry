@@ -5,31 +5,24 @@ var express = require("express");
 var path = require("path");
 
 var app = express();
-port = 2000;
-app.use("/static", express["static"]("static"));
-app.set("view engine", "pug");
-app.set("views", path.join(__dirname, "views"));
-app.get("/demo", function (req, res) {
-  res.status(200).render("demo", {
-    title: "Demo",
-    message: "This is demo content"
-  });
-});
+port = 2000; // EXPRESS SPECIFIC STUFF
+
+app.use("/static", express["static"]("static")); // For serving static files
+// PUG SPECIFIC STUFF
+
+app.set("view engine", "pug"); // Set the template engine as pug
+
+app.set("views", path.join(__dirname, "views")); // Set the views directory
+// ENDPOINTS
+
 app.get("/", function (req, res) {
-  res.send("This is my Home");
-});
-app.get("/about", function (req, res) {
-  res.send("This is my about");
-});
-app.post("/about", function (req, res) {
-  res.send("This is my post request about");
-});
-app.get("/services", function (req, res) {
-  res.send("This is my services");
-});
-app.get("/contact", function (req, res) {
-  res.send("This is my contact");
-});
+  var params = {
+    title: "PUG is the best",
+    content: "bekar content"
+  };
+  res.status(200).render("index.pug", params);
+}); // START THE SERVER
+
 app.listen(port, function () {
   console.log("Server running on port ".concat(port));
 });
