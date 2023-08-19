@@ -18,6 +18,11 @@ app.get("/", (req, res) => {
   res.status(200).render("index.pug", params);
 });
 
+app.get("/img", (req, res) => {
+  const params = {};
+  res.status(200).render("static/dance-bg.jpg", params);
+});
+
 // START THE SERVER
 app.listen(port, () => {
   console.log(`The application started successfully on port ${port}`);

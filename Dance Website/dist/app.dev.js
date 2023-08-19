@@ -18,6 +18,10 @@ app.set("views", path.join(__dirname, "views")); // ENDPOINTS
 app.get("/", function (req, res) {
   var params = {};
   res.status(200).render("index.pug", params);
+});
+app.get("/img", function (req, res) {
+  var params = {};
+  res.status(200).render("static/dance-bg.jpg", params);
 }); // START THE SERVER
 
 app.listen(port, function () {
